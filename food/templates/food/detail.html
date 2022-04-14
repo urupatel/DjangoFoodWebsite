@@ -1,11 +1,12 @@
 {% extends 'food/base.html' %}
 {% block body %}
     <div class="container">
+        <br/><br/>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4 offset-md-3">
                 <img class="card" height="300px" width="400px" src="{{item.item_image}}" /> 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <!-- <h1>{{item.item_name}}</h1>
                 <h2>{{item.item_desc}}</h2>
                 <h3>${{item.item_price}}</h3>
@@ -14,7 +15,7 @@
                 <h1>{{object.item_name}}</h1>
                 <h2>{{object.item_desc}}</h2>
                 <h3>${{object.item_price}}</h3>
-                <a href="{% url 'food:delete_item' item.id %}">Delete</a>
+                <a class="btn btn-danger text-white", href="{% url 'food:delete_item' item.id %}">Delete</a>
             </div>
         </div>
     </div>

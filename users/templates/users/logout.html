@@ -1,1 +1,26 @@
-<h1>You have been logged out.</h1>
+
+
+{% extends 'food/base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class = "col-md-4 offset-md-4">
+            <br />
+            <div class="card">
+                <div class="card-header text-white bg-info">
+                    <div class="card-title">
+                        Logout
+                    </div>
+                </div>
+                <div class="card-body">
+                    <label>Successfully Logged out. </label>
+                    <label>Login Again? </label><a class="btn btn-info text-white" href="{% url 'login' %}">Login</a>
+    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
